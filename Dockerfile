@@ -9,4 +9,5 @@ FROM microsoft/dotnet:2.2-aspnetcore-runtime-alpine
 WORKDIR /app
 COPY --from=Builder /app .
 EXPOSE 5060
-CMD ["dotnet","Sample.RabbitMQ.MySql.dll"]
+#CMD ["dotnet","Sample.RabbitMQ.MySql.dll"]
+CMD ["sleep","9999999999"]
