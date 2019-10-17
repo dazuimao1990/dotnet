@@ -19,7 +19,7 @@ namespace Sample.RabbitMQ.MySql
                 port = Environment.GetEnvironmentVariable("PORT");
             }
             Console.WriteLine("Listing :{0}", port);
-            CreateWebHostBuilder(args).Build().Run();
+            CreateWebHostBuilder(port, args).Build().Run();
         }
 
         public static IWebHostBuilder CreateWebHostBuilder(string port, string[] args) =>
