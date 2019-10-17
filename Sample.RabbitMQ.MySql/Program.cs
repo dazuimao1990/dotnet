@@ -22,7 +22,7 @@ namespace Sample.RabbitMQ.MySql
             CreateWebHostBuilder(args).Build().Run();
         }
 
-        public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
+        public static IWebHostBuilder CreateWebHostBuilder(string port, string[] args) =>
             WebHost.CreateDefaultBuilder(args)
                 .UseUrls ($"http://0.0.0.0:{port}")
                 .UseStartup<Startup>();
