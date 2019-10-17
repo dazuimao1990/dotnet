@@ -1,0 +1,6 @@
+ports:
+   - port: 5001
+     procotol: http
+cmd: dotnet Sample.RabbitMQ.MySql.dll --server.urls "http://*:5001"
+      
+     
